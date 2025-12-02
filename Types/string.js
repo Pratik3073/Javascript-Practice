@@ -5,6 +5,9 @@ const city = `pune`;
 const fullname = `my name is ${name} ${lastname} and i live in ${city}`
 console.log(name,lastname,city);
 console.log(fullname)
+
+
+// template literals are used to create html element dynamically using js.
 const html = `
 <div>
     <h1>my namr is ${name} ${lastname}</h1>
