@@ -113,16 +113,16 @@
 
  //Arrow Function INSIDE a Class
  //Arrow functions are sometimes useful because they fix this to the instance.
- class User {
-   constructor(name) {
-     this.name = name;
-   }
+//  class User {
+//    constructor(name) {
+//      this.name = name;
+//    }
  
-   greet = () => {
-     console.log("Hi", this.name);
-   }
- }
+//    greet = () => {
+//      console.log("Hi", this.name);
+//    }
+//  }
  
- const u = new User("Pratik");
- u.greet(); // Hi Pratik
- 
+//  const u = new User("Pratik");
+//  u.greet(); // Hi Pratik
+ //In this case, arrow function inherits this from the constructor, so it works.
