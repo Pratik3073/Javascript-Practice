@@ -102,3 +102,14 @@ people.forEach((person, index) => {
 // In DevTools, you can select an HTML element and tell the browser:
 // “Stop the code whenever this element's attributes (id, class, style, src, etc.) change.”
 // This helps you find which JS code is modifying the DOM.
+
+
+// Hoisting 
+sayHi();
+function sayHi(){
+    console.log("hay!");
+    console.log(add(10,2));
+}
+function add(a,b){
+    return a+b;
+}

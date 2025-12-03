@@ -32,12 +32,15 @@
 // }
 // console.log(cool);
 
+//What is Lexical / Static Scoping?
+//Lexical (static) scoping in JavaScript means: a function does not care where it is called, it only cares where it is declared.
+const dog ="sinkers";
 
-function isCool(name) {
-    let cool;
-    if(name === "pratik") {
-        cool = true;
-    }
-    console.log(cool);
-    return cool;
+function logDog(){
+    console.log(dog);
 }
+function go(){
+    const dog="sunny";
+    logDog();
+}
+go();
