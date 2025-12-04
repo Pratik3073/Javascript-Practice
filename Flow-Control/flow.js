@@ -36,9 +36,40 @@
 // }
 
 //Truthy and Falsy
+/*
+//Falsy
+| Value       | Description   |
+| ----------- | ------------- |
+| `false`     | Boolean false |
+| `0`         | Number zero   |
+| `-0`        | Negative zero |
+| `0n`        | BigInt zero   |
+| `""`        | Empty string  |
+| `null`      | No value      |
+| `undefined` | Not defined   |
+| `NaN`       | Not a number  |
 
+*/
+
+//Truthy 
+/*
+| Value             | Description                               |
+| ----------------- | ----------------------------------------- |
+| `true`            | Boolean true                              |
+| `"hello"`         | Non-empty string                          |
+| `" "`             | String with space                         |
+| `1`, `-1`, `3.14` | All non-zero numbers                      |
+| `[]`              | Empty array                               |
+| `{}`              | Empty object                              |
+| `function(){}`    | Any function                              |
+| `[] == false`     | Special case truthy comparison but tricky |
+| `Infinity`        | Infinity is truthy                        |
+| `-Infinity`       | Negative Infinity                         |
+
+ */
 const dog= "snickers";
-if(dog){
+if(dog)
+    {
     console.log("you have a dog ")
 }else {
     console.log("you dont have a dog ");
