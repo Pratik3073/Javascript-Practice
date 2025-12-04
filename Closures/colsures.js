@@ -8,6 +8,7 @@
 //     }
 //     inner();
 // }
+
 // function outer() {
 //     const outervar = "i am the outer";
 

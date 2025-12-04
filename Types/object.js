@@ -68,7 +68,7 @@
 // console.log(obj);
 
 //Destructure Object
-// const { name, age } = person;//Object destructuring is a shortcut that lets you extract specific keys from an object and store them in variables.
+// const { name as fullname, age } = person;//Object destructuring is a shortcut that lets you extract specific keys from an object and store them in variables.
 // console.log(name); // Pratik
 
 

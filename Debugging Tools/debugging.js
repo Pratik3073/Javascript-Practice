@@ -19,7 +19,7 @@ people.forEach((person, index) => {
 //     return `DR.${name}`
 // }
 
-// function doall(){
+// function doAll(){
 //     console.group('hi');
 //     console.log("pratik");
 //     console.info("kadam");
@@ -105,6 +105,8 @@ people.forEach((person, index) => {
 
 
 // Hoisting 
+//In JavaScript, function declarations are hoisted, meaning the entire function is moved to the top of its scope during compilation.
+//You can call the function before it is defined in the code.
 sayHi();
 function sayHi(){
     console.log("hay!");
