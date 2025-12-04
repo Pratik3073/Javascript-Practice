@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="cards">
+            <div class="card" data-description="wes is cool">
+                <img src="https://picsum.photos/200?random=2" alt="wes bos">
+                <h2>pratik</h2>
+                <button>learn more</button>
+            </div>
+
+            <div class="card" data-description="wes is cool">
+                <img src="https://picsum.photos/200?random=3" alt="wes bos">
+                <h2>pradeep</h2>
+                <button>learn more</button>
+            </div>
+
+            <div class="card" data-description="wes is cool">
+                <img src="https://picsum.photos/200?random=4" alt="wes bos">
+                <h2>kadam</h2>
+                <button>learn more</button>
+            </div>
+            
+            <div class="card" data-description="wes is cool">
+                <img src="https://picsum.photos/200?random=5" alt="wes bos">
+                <h2>kadam pratik</h2>
+                <button>learn more</button>
+            </div>
+    </div>
+<div class="modal-outer">
+    <div class="modal-inner">
+        <p>the testing 123</p>
+    </div>
+</div>
+
+    <style>
+        body{
+        background-color: blue;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            grid-gap: 20px;
+            padding: 2rem;
+        }
+
+        .card{
+            background: white;
+            padding: 1rem;
+            border-radius: 2px;
+        }
+        .card h2{
+            color: black;
+        }
+        .card img{
+                width: 100%;
+        }
+
+        .modal-outer{
+        display: grid;
+        background: hsla(50,100%,50%,0.7);
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;  /*tell browser to stop event*/
+        }
+        .modal-outer.open{
+                opacity: 1;
+                pointer-events: all;
+        }
+        .modal-inner{
+           max-width:600px ; 
+           min-width: 400px;
+           padding: 2rem;
+           border-radius: 5px;
+           min-height: 200px;
+           background-color: white;
+           transform: translateY(-200%);
+           transition:transform 2s;
+            
+        }
+        .modal-outer.open .modal-inner{
+            transform: translateY(0);
+        }
+    </style>
+    <script src="./OutsideModal.js"></script>
+</body>
+</html>
