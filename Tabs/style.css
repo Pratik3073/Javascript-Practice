@@ -1,0 +1,35 @@
+.tabs{
+    display: grid;
+}
+
+[role="tablist"]{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 10px; /* fixed grid-gap typo */
+}
+
+[role="tabpanel"]{
+    background: var(--yellow, #ffeb3b); /* fallback color */
+    padding: 2rem;
+}
+
+button{
+    background: var(--grey, #ddd); /* fallback color */
+    border: 0;
+    color: black;
+    border-radius: 5px 5px 0 0;
+    --bs-color: rgba(0,0,0,0.1); /* fixed typo rgda -> rgba */
+    box-shadow: inset 0 -2px 5px var(--bs-color); /* added space in inset */
+    cursor: pointer;
+}
+
+button[aria-selected="true"]{
+    background: var(--yellow, #ffeb3b);
+    box-shadow: none;
+    color: rgba(0,0,0,0.7);
+}
+
+button:focus{
+    outline: 0;
+    --bs-color: rgba(0,0,0,0.6);
+}
