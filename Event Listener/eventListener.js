@@ -35,6 +35,7 @@ function handelBuybuttonClick(event){
     console.log(event.target ===event.currentTarget);
 
     // stop this event from bubbling up
+    //When you click a child element, the event first runs on the child, then moves upwards to its parent, then grandparent, and continues up to the document.
     
     event.stopPropagation();
     
