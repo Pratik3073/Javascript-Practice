@@ -67,11 +67,42 @@
 | `-Infinity`       | Negative Infinity                         |
 
  */
-const dog= "snickers";
-if(dog)
-    {
-    console.log("you have a dog ")
-}else {
-    console.log("you dont have a dog ");
+// const dog= "snickers";
+// if(dog)
+//     {
+//     console.log("you have a dog ")
+// }else {
+//     console.log("you dont have a dog ");
     
+// }
+
+
+//Coercion
+//JavaScript is a loosely typed language, meaning it can automatically convert one data type into another when needed.
+/*
+| Expression           | Result  | Why                         |
+| -------------------- | ------- | --------------------------- |
+| `"5" + 5`            | `"55"`  | + joins strings             |
+| `"5" - 5`            | `0`     | - forces numeric conversion |
+| `true + 1`           | `2`     | true → 1                    |
+| `false + 5`          | `5`     | false → 0                   |
+| `10 + null`          | `10`    | null → 0                    |
+| `"10" * "2"`         | `20`    | * forces number             |
+| `undefined + 1`      | `NaN`   | undefined → NaN             |
+| `null == undefined`  | `true`  | loose equality              |
+| `null === undefined` | `false` | strict equality             |
+
+*/
+
+
+//Ternaries 
+// const count =1;
+// const word = count ===1 ? "item": "items";
+// const sentence = `you have ${count} ${word}`
+// console.log(sentence);
+
+function showAdmin(){
+    console.log("showing admin bar");
 }
+const isAdmin =true;
+isAdmin ?showAdmin() : null;
