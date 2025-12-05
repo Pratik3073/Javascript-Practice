@@ -101,8 +101,49 @@
 // const sentence = `you have ${count} ${word}`
 // console.log(sentence);
 
-function showAdmin(){
-    console.log("showing admin bar");
+// function showAdmin(){
+//     console.log("showing admin bar");
+// }
+// const isAdmin =true;
+// isAdmin ?showAdmin() : null;
+
+// And And trick
+
+// function check(){
+//     return true;
+// }
+// function check2(){
+//     return true;
+// }
+// function check3(){
+//     return true;
+// }
+// if(check() && check2()&& check3()){
+//     console.log('all passed');
+// }else{
+//     console.log("some checks are failed");
+    
+// }
+
+
+
+
+
+
+//Conditional Abuse
+let isLoggedIn = true;
+let role = "admin";
+
+if (isLoggedIn) {
+  if (role === "admin") {
+    console.log("Welcome Admin");
+  } else {
+    console.log("Welcome User");
+  }
+} else {
+  console.log("Please login");
 }
-const isAdmin =true;
-isAdmin ?showAdmin() : null;
+
+//Better Alternatives
+isLoggedIn ? console.log(role === "admin" ? "Welcome Admin" : "Welcome User")
+  : console.log("Please login");

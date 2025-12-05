@@ -9,13 +9,13 @@ wes.addEventListener('click', function (e) {
   }
 });
 
-// FIXED: Correct attribute is "signup"
+
 const signupform = document.querySelector('[name="signup"]');
 
 signupform.addEventListener('submit', function (e) {
   e.preventDefault();
   console.log(e);
 
-  // FIXED: Correct way to access input value
+  
   console.log(e.currentTarget.elements.name.value);
 });
