@@ -92,3 +92,26 @@
 | Bracket     | `user["name"]`        | Dynamic keys         |
 | Destructure | `const {name} = user` | Want quick variables |
 */
+
+const person1={
+    first:"pratik",
+    last:"kadam",
+    clothing:{
+        shirts:10,
+        pants:3
+    }
+}
+
+const person2={
+    first:"pratik",
+    last:"kadam",
+}
+//  In this code, instead of making a copy of the object, it gets a reference to person1.
+// const person3 = person1;
+// person3.first="prateek";
+// console.log(person3.first);
+// console.log(person1.first);
+
+const person3={...person1};//this did copy of obj not a reference.It is only a shallow copy, not a deep copy.
+
+
