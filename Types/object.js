@@ -101,7 +101,6 @@ const person1={
         pants:3
     }
 }
-
 const person2={
     first:"pratik",
     last:"kadam",
@@ -112,6 +111,11 @@ const person2={
 // console.log(person3.first);
 // console.log(person1.first);
 
-const person3={...person1};//this did copy of obj not a reference.It is only a shallow copy, not a deep copy.
+// const person3={...person1};//this did copy of obj not a reference.It is only a shallow copy, not a deep copy.
 
+
+//to do Deep copy in this i use "https://unpkg.com/lodash.js"
+const person3 =_.cloneDeep(person1)
+person3.first="kadam";
+person3.clothing.shirts=100;
 
